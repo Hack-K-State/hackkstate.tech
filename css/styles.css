@@ -36,7 +36,7 @@ a i:hover,
 }
 
 .container {
-    margin-top: 15%;
+    margin-top: 45%;
     text-align: center;
     z-index: 2;
 }
@@ -143,8 +143,10 @@ button[type="submit"]:hover {
 .video-container {
     position: relative;
     padding-bottom: 50%;
+    margin-top: 20px;
     padding-top: 30px;
     height: 0;
+    width: 107%;
     overflow: hidden;
 }
 
@@ -164,9 +166,24 @@ button[type="submit"]:hover {
     color: #fff;
     text-shadow: none;
     opacity: 1;
-    top: -25px;
+    top: -10px;
     right: -10px;
     position: relative;
+}
+
+@media screen and (min-width: 580px) {
+    .container {
+        margin-top: 15%;
+    }
+
+    .video-container {
+        margin-top: 0;
+        width: inherit;
+    }
+
+    .close {
+        top: -25px;
+    }
 }
 
 #bg {
