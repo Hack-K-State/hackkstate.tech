@@ -67,7 +67,6 @@ $('#hackathon').on('hidden.bs.modal', function (e) {
         'img/4.jpg': 'center',
         'img/5.jpg': 'center',
         'img/6.jpg': 'center',
-        'img/7.jpg': 'center',
         'img/8.jpg': 'center',
         'img/9.jpg': 'center',
         'img/10.jpg': 'center',
