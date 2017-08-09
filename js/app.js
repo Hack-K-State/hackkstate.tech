@@ -36,8 +36,11 @@ function onPlayerStateChange(event){
   }
 }
 
+var ismobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
 $('#hackathon').on('shown.bs.modal', function (e) {
-  player.playVideo();
+    if(!ismobile){
+        player.playVideo();
+    }
 });
 
 $('#hackathon').on('hidden.bs.modal', function (e) {
