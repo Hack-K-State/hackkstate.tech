@@ -11,6 +11,39 @@ $(".info-form").submit(function(event) {
   });
 });
 
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '390',
+    width: '640',
+    videoId: 'qj4DQfYx2Hg',
+    playerVars: {
+      'rel': 0,
+    },
+    events: {
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerStateChange(event){
+  if (event.data == YT.PlayerState.ENDED){
+    $('#hackathon').modal('hide');
+  }
+}
+
+$('#hackathon').on('shown.bs.modal', function (e) {
+  player.playVideo();
+});
+
+$('#hackathon').on('hidden.bs.modal', function (e) {
+  player.pauseVideo();
+});
+
 (function() {
   "use strict";
   // classList | (c) @remy | github.com/remy/polyfills | rem.mit-license.org
