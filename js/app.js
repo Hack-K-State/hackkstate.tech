@@ -64,17 +64,17 @@ $('#hackathon').on('hidden.bs.modal', function (e) {
   (function() {
     var settings = {
       images: {
-        'img/1.jpg': 'center',
-        'img/2.jpg': 'center',
-        'img/3.jpg': 'center',
-        'img/4.jpg': 'center',
-        'img/5.jpg': 'center',
-        'img/6.jpg': 'center',
-        'img/8.jpg': 'center',
-        'img/9.jpg': 'center',
-        'img/10.jpg': 'center',
-        'img/11.jpg': 'center',
-        'img/12.jpg': 'center',
+        'https://s3.amazonaws.com/hackkstate/hackkstate.tech/1.jpg': 'center',
+        'https://s3.amazonaws.com/hackkstate/hackkstate.tech/2.jpg': 'center',
+        'https://s3.amazonaws.com/hackkstate/hackkstate.tech/3.jpg': 'center',
+        'https://s3.amazonaws.com/hackkstate/hackkstate.tech/4.jpg': 'center',
+        'https://s3.amazonaws.com/hackkstate/hackkstate.tech/5.jpg': 'center',
+        'https://s3.amazonaws.com/hackkstate/hackkstate.tech/6.jpg': 'center',
+        'https://s3.amazonaws.com/hackkstate/hackkstate.tech/8.jpg': 'center',
+        'https://s3.amazonaws.com/hackkstate/hackkstate.tech/9.jpg': 'center',
+        'https://s3.amazonaws.com/hackkstate/hackkstate.tech/10.jpg': 'center',
+        'https://s3.amazonaws.com/hackkstate/hackkstate.tech/11.jpg': 'center',
+        'https://s3.amazonaws.com/hackkstate/hackkstate.tech/12.jpg': 'center',
       },
       delay: 6000
     };
