@@ -215,6 +215,10 @@ button[type="submit"]:hover {
     .close {
         top: -25px;
     }
+
+    .close:hover {
+        top: -25px;
+    }
 }
 
 #bg {
