@@ -166,9 +166,9 @@ button[type="submit"]:hover,
     padding: 100px 20px;
 }
 
-.sponsors div,
-.partners div {
-  padding: 25px;
+.sponsors .row,
+.partners .row {
+  padding: 50px 0;
 }
 
 .sponsor,
