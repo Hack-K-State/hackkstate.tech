@@ -154,12 +154,21 @@ button[type="submit"]:hover,
     margin-bottom: 25px;
 }
 
+.sponsors {
+  margin-top: 250px;
+}
+
 .sponsors,
 .partners {
     background-color: #F2F2F2;
     color: #000;
     text-align: center;
-    padding: 20px;
+    padding: 100px 20px;
+}
+
+.sponsors div,
+.partners div {
+  padding: 25px;
 }
 
 .sponsor,
