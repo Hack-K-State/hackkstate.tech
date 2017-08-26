@@ -85,7 +85,8 @@ input[type="email"]:focus {
     color: #fff;
 }
 
-button[type="submit"] {
+button[type="submit"],
+.register-btn {
     font-family: 'Raleway', sans-serif;
     vertical-align: top;
     -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
@@ -106,8 +107,17 @@ button[type="submit"] {
     white-space: nowrap;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:hover,
+.register-btn:hover {
     background-color: #592C95;
+}
+
+.registration {
+    margin-top: 25px;
+}
+
+.registration a {
+    width: 150px;
 }
 
 .social {
