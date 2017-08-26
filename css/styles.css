@@ -125,38 +125,78 @@ button[type="submit"]:hover {
 .video {
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .video h5:hover {
     cursor: pointer;
 }
 
-.sponsors {
-    background-color: #F2F2F2;
+.faq {
+    text-align: left;
+}
+
+.faq h5 {
     text-align: center;
-    margin-top: 150px;
-    padding-top: 15px;
-    padding-bottom: 1px;
+}
+
+.faq div {
+    margin-bottom: 25px;
+}
+
+.sponsors,
+.partners {
+    background-color: #F2F2F2;
     color: #000;
+    text-align: center;
+    padding: 20px;
 }
 
-.sponsors a {
-    color: #512888;
-}
-
-.sponsors a:hover {
-    color: #000;
-}
-
-.sponsors .row {
-    margin-bottom: 75px;
-}
-
-.sponsors img {
+.sponsor,
+.partner {
     display: block;
-    width: 100%;
-    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 15px;
 }
+
+.sixteen-bit div span {
+    height: 100px;
+}
+
+.lets-talk div span {
+    height: 75px;
+}
+
+.main-partner div span {
+    height: 150px;
+}
+
+.o-partner div span {
+    height: 75px;
+}
+
+#civicplus {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/CivicPlus.svg');}
+#garmin {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Garmin.svg');}
+
+#tech {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/TECH.svg');}
+#betsol {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/BETSOL.png');}
+#codepen {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/CodePen.svg');}
+#homebase {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Homebase.png');}
+#jetbrains {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/JetBrains.svg');}
+#thunderhead {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Thunderhead.svg');}
+#twilio {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Twillio.svg');}
+
+#mlh {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/MLH.svg');}
+#alexa {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/Alexa.svg');}
+#aws {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/AWS.svg');}
+#domain {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/Domain.svg');}
+#github {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/GitHub.svg');}
+#intel {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/Intel.svg');}
+#oculus {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/Oculus.svg');}
+#hh {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/hack-harassment.svg');}
+#soylent {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/soylent.svg');}
 
 .modal-dialog {
     max-width: 90%;
