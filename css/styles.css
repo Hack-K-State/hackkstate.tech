@@ -196,6 +196,7 @@ button[type="submit"]:hover,
     height: 75px;
 }
 
+#bcbs {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/BCBS.svg');}
 #civicplus {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/CivicPlus.svg');}
 #garmin {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Garmin.svg');}
 
