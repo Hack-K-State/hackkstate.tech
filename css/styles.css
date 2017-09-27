@@ -138,7 +138,8 @@ button[type="submit"]:hover,
     margin-bottom: 40px;
 }
 
-.video h5:hover {
+.video h5:hover,
+.video p:hover {
     cursor: pointer;
 }
 
@@ -209,6 +210,9 @@ button[type="submit"]:hover,
 #twilio {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Twillio.svg');}
 
 #mlh {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/MLH.svg');}
+#engg {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/K-StateEngg.svg');}
+#cs {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/K-StateCS.svg');}
+
 #alexa {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/Alexa.svg');}
 #aws {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/AWS.svg');}
 #domain {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/Domain.svg');}
