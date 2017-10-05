@@ -1,0 +1,241 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #512888;
+  text-decoration: none;
+  transition: color 0.2s ease, color 0.2s ease;
+}
+
+.container {
+  width: 100% !important;
+  min-height: 100%;
+  padding-top: 50px;
+}
+
+.container .row {
+  width: 95%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar-brand,
+.nav li a {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main {
+  padding-top: 50%;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.scroll-down {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #ffffff;
+  color: #ffffff !important;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 4rem;
+}
+
+.scroll-down:hover {
+  box-shadow: inset 0 0 0 2px #512888;
+  color: #512888 !important;
+  transition: color 0.2s ease, color 0.2s ease;
+}
+
+.registration {
+  margin-top: 25px;
+}
+
+.registration a {
+  width: 150px;
+}
+
+.registration-btn {
+  vertical-align: top;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  background-color: #512888;
+  border-radius: 6px;
+  border: 0;
+  color: #ffffff !important;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  height: 2.75em;
+  line-height: 2.75em;
+  padding: 0 1.125em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.registration-btn:hover,
+.registration-btn:focus,
+.registration-btn:active {
+  background-color: #592C95;
+}
+
+.social {
+  margin: 25px 0;
+}
+
+.social a {
+  padding: 10px;
+}
+
+a i {
+  color: #fff;
+  transition: color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+}
+
+a i:hover {
+  color: #512888;
+  text-decoration: none;
+}
+
+.list-group {
+  margin-top: 25px;
+}
+
+.list-group-item {
+  background-color: transparent;
+}
+
+.panel {
+  background-color: transparent;
+}
+
+.panel-default {
+  border: none;
+}
+
+.panel-default>.panel-heading {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.sponsors {
+  background-color: #F2F2F2;
+  color: #000;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.sponsors .row {
+  padding: 50px 0;
+}
+
+.sponsor,
+.partner {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 15px;
+}
+
+.sixteen-bit div a span {
+    height: 100px;
+}
+
+.lets-talk div a span {
+    height: 75px;
+}
+
+.main-partner div a span {
+    height: 150px;
+}
+
+.o-partner div a span {
+    height: 75px;
+}
+
+@media (min-width: 440px){
+  .main {
+    padding-top: 30%;
+  }
+}
+
+@media (min-width: 768px){
+  .navbar {
+    border-radius: 0;
+  }
+
+  .main {
+    padding-top: 15%;
+  }
+}
+
+.main {background: url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/overlay.png), url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/3.jpg);}
+.about {background: url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/overlay.png), url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/10.jpg);}
+.faq {background: url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/overlay.png), url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/1.jpg);}
+
+.main,
+.about,
+.faq,
+.team {
+  background-size: 256px 256px, cover;
+  background-attachment: fixed, fixed;
+  background-position: top left, bottom center;
+  background-repeat: repeat, no-repeat;
+}
+
+#bcbs {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/BCBS.svg');}
+#civicplus {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/CivicPlus.svg');}
+#garmin {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Garmin.svg');}
+#mediware {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Mediware.svg');}
+#smg {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/SMG.svg');}
+
+#tech {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/TECH.svg');}
+#betsol {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/BETSOL.png');}
+#codepen {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/CodePen.svg');}
+#dunkin {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/DunkinDonuts.svg');}
+#homebase {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Homebase.png');}
+#jetbrains {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/JetBrains.svg');}
+#thunderhead {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Thunderhead.svg');}
+#twilio {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Twillio.svg');}
+#wolfram {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Wolfram.svg');}
+
+#mlh {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/MLH.svg');}
+#engg {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/K-StateEngg.svg');}
+#cs {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/K-StateCS.svg');}
+
+#alexa {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/Alexa.svg');}
+#aws {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/AWS.svg');}
+#domain {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/Domain.svg');}
+#github {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/GitHub.svg');}
+#intel {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/Intel.svg');}
+#oculus {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/Oculus.svg');}
+#hh {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/hack-harassment.svg');}
+#soylent {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Partners/soylent.svg');}
