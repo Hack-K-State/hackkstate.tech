@@ -31,7 +31,7 @@
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1724230004545624&ev=PageView&noscript=1"/></noscript>
 </head>
-<body>
+<body data-spy="scroll" data-target="#nav">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -41,7 +41,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="https://hackkstate.tech">Hack K-State</a>
+        <a class="navbar-brand" href="#main">Hack K-State</a>
       </div>
       <div class="collapse navbar-collapse" id="nav">
         <ul class="nav navbar-nav navbar-right">
@@ -54,7 +54,7 @@
     </div>
   </nav>
 
-  <div class="container main">
+  <div class="container main" id="main">
     <h1>Hack K-State '17</h1>
     <h3>November 3-5<br /><a href="https://goo.gl/maps/xpfbWYpoWts" target="_blank">Kansas State University</a></h3>
     <div class="registration">
@@ -68,7 +68,7 @@
       <a href="mailto:team@hackkstate.tech"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
     </div>
     <div class="row">
-      <a href="#" class="fa fa-arrow-down scroll-down" aria-hidden="true"></a>
+      <a href="#about" class="fa fa-arrow-down scroll-down" aria-hidden="true"></a>
     </div>
   </div>
 
@@ -237,6 +237,9 @@
 
   <div class="container sponsors" id="sponsors">
     <h2>Sponsors</h2>
+    <div class="row thirtytwo-bit">
+      <div class="col-md-8 col-md-offset-2"><a href="https://www.bats.com/" target="_blank"><span class="sponsor" id="bats"></span></a></div>
+    </div>
     <div class="row sixteen-bit">
       <div class="col-md-6 col-lg-3"><a href="https://www.civicplus.com/" target="_blank"><span class="sponsor" id="civicplus"></span></a></div>
       <div class="col-md-6 col-lg-3"><a href="https://www.garmin.com/en-US" target="_blank"><span class="sponsor" id="garmin"></span></a></div>
