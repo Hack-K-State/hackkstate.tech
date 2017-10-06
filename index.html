@@ -1,181 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Hack K-State">
-    <!--<link rel="icon" href="../../favicon.ico">-->
-    <title>Hack K-State 2017</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-57323620-28', 'auto');
-    ga('send', 'pageview');
-    </script>
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1724230004545624');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1724230004545624&ev=PageView&noscript=1"
-    /></noscript>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Hack K-State">
+  <title>Hack K-State 2017</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-57323620-28', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script>
+  !function(f,b,e,v,n,t,s){
+    if(f.fbq)return;
+    n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
+  }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1724230004545624');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1724230004545624&ev=PageView&noscript=1"/></noscript>
 </head>
+<body data-spy="scroll" data-target="#nav">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+          <span class="sr-only">Toggle</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#main">Hack K-State</a>
+      </div>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="https://registration.hackkstate.tech" target="_blank">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<body>
-    <div class="container">
-        <h1>Hack K-State 2017</h1>
-        <h4>November 3-5<br />Kansas State University</h4>
-        <div class="registration">
-            <a href="https://registration.hackkstate.tech" target="_blank" class="btn btn-default register-btn">Register Now!</a>
-        </div>
-        <!--
-        <div class="signup">
-            <div class="row justify-content-md-center">
-                <div class="col-md-6">
-                    <form class="info-form" action="email.php" method="POST">
-                        <label id="message">Signup to get email updates:</label>
-                        <input type="email" class="form-control" name="email" id="email" autofocus="true" placeholder="Email Address">
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        -->
-        <div class="social">
-            <a href="https://www.facebook.com/hackkstate/" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/hackkstate/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/hackkstate" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-            <a href="https://www.snapchat.com/add/hackkstate" target="_blank"><i class="fa fa-snapchat-ghost fa-lg" aria-hidden="true"></i></a>
-            <a href="mailto:team@hackkstate.tech"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
-        </div>
-        <div class="row">
-          <div class="col-lg-3">
-            <a href="https://s3.amazonaws.com/hackkstate/hackkstate.tech/HackKStateInformation.pdf" target="_blank">Hackathon Flyer</a>
-          </div>
-          <div class="col-lg-3">
-            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a>
-          </div>
-          <div class="col-lg-3">
-            <a href="https://s3.amazonaws.com/hackkstate/hackkstate.tech/HackK-State2017Prospectus.pdf" target="_blank">Sponsorship Prospectus</a>
-          </div>
-          <div class="col-lg-3">
-            <a href="https://s3.amazonaws.com/hackkstate/hackkstate.tech/HackK-StateClubBasedTracksandMiniEvents.pdf" target="_blank">Club Based Tracks/Mini Events</a>
-          </div>
-        </div>
-        <div class="row"></div>
+  <div class="container main" id="main">
+    <h1>Hack K-State '17</h1>
+    <h3>November 3-5<br /><a href="https://goo.gl/maps/xpfbWYpoWts" target="_blank">Kansas State University</a></h3>
+    <div class="registration">
+      <a href="https://registration.hackkstate.tech" target="_blank" class="btn btn-default registration-btn">Register Now!</a>
     </div>
-    <div class="container">
-        <h2>FAQ</h2>
-        <div class="row video justify-content-md-center">
-            <div class="col-md-6">
-                <h5 data-toggle="modal" data-target="#hackathon">What's a hackathon?</h5>
-                <p data-toggle="modal" data-target="#hackathon">Click here to find out!</p>
-            </div>
-        </div>
-        <div class="row justify-content-md-center faq">
-            <div class="col-md-4">
-                <h5>Who can attend Hack K-State?</h5>
-                <p>Hack K-State is open to all high school, undergraduate, and graduate students. We also accept applications if you have graduated within the last 12 months.</p>
-            </div>
-            <div class="col-md-4">
-                <h5>How much does it cost?</h5>
-                <p>It's FREE! Thanks to our sponsors, we'll be providing food, dedicated sleeping areas, and awesome swag all weekend.</p>
-            </div>
-            <div class="col-md-4">
-                <h5>Are you providing travel reimbursement?</h5>
-                <p>We can't confirm travel reimbursement right now, but we will be looking at our budget after the hackathon. If you'd like to be considered for travel reimbursement, click the checkbox when you submit your application.</p>
-            </div>
-        </div>
-        <div class="row justify-content-md-center faq">
-            <div class="col-md-4">
-                <h5>Are there teams?</h5>
-                <p>Yes! Bring yourself and 3 friends! If you don't have a team, but would like to be on one, we'll help you find the team that's right for you!</p>
-            </div>
-            <div class="col-md-4">
-                <h5>I don't know how to code.</h5>
-                <p>Hackathons are one of the best ways to learn new things! We'll have student and professional mentors available to answer all your questions!</p>
-            </div>
-            <div class="col-md-4">
-                <h5>I'm not a Computer Science major.</h5>
-                <p>Hackathons aren't just for programmers, they're for everyone! Whether you have a cool app idea, can create awesome artwork or music, or don't know what you're good at, there's something for you to build at Hack K-State.</p>
-            </div>
-        </div>
+    <div class="social">
+      <a href="https://www.facebook.com/hackkstate/" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/hackkstate/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/hackkstate" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+      <a href="https://www.snapchat.com/add/hackkstate" target="_blank"><i class="fa fa-snapchat-ghost fa-lg" aria-hidden="true"></i></a>
+      <a href="mailto:team@hackkstate.tech"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
     </div>
-    <div class="container-fluid sponsors">
-        <h2>Sponsors</h2>
-        <div class="row justify-content-md-center sixteen-bit">
-            <div class="col-md-5 col-lg-3"><a href="https://www.bluekc.com/" target="_blank"><span class="sponsor" id="bcbs"></span></a></div>
-            <div class="col-md-5 col-lg-3"><a href="https://www.civicplus.com/" target="_blank"><span class="sponsor" id="civicplus"></span></a></div>
-            <div class="col-md-5 col-lg-3"><a href="https://www.garmin.com/en-US" target="_blank"><span class="sponsor" id="garmin"></span></a></div>
-            <div class="col-md-5 col-lg-3"><a href="https://www.mediware.com/" target="_blank"><span class="sponsor" id="mediware"></span></a></div>
-        </div>
-        <div class="row justify-content-md-center lets-talk">
-            <div class="col-md-4 col-lg-2"><a href="http://get.tech/" target="_blank"><span class="sponsor" id="tech"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="https://betsol.com/" target="_blank"><span class="sponsor" id="betsol"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="https://codepen.io/" target="_blank"><span class="sponsor" id="codepen"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="https://www.dunkindonuts.com/en" target="_blank"><span class="sponsor" id="dunkin"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="http://homebase.ai/" target="_blank"><span class="sponsor" id="homebase"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="https://www.jetbrains.com/" target="_blank"><span class="sponsor" id="jetbrains"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="http://www.thunderheadeng.com/" target="_blank"><span class="sponsor" id="thunderhead"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="https://www.twilio.com/" target="_blank"><span class="sponsor" id="twilio"></span></a></div>
-        </div>
+    <div class="row">
+      <a href="#about" class="fa fa-arrow-down scroll-down" aria-hidden="true"></a>
     </div>
-    <div class="container-fluid partners">
-        <h2>Partners</h2>
-        <div class="row justify-content-md-center main-partner">
-            <div class="col-md-3"><a href="https://mlh.io/" target="_blank"><span class="partner" id="mlh"></span></a></div>
-            <div class="col-md-4"><a href="https://www.engg.ksu.edu/" target="_blank"><span class="partner" id="engg"></span></a></div>
-            <div class="col-md-4"><a href="https://www.cs.ksu.edu/" target="_blank"><span class="partner" id="cs"></span></a></div>
-        </div>
-        <div class="row justify-content-md-center o-partner">
-            <div class="col-md-4 col-lg-2"><a href="https://developer.amazon.com/alexa" target="_blank"><span class="partner" id="alexa"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="https://aws.amazon.com/" target="_blank"><span class="partner" id="aws"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="https://www.domain.com/" target="_blank"><span class="partner" id="domain"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="https://github.com/" target="_blank"><span class="partner" id="github"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank"><span class="partner" id="intel"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="https://www.oculus.com/" target="_blank"><span class="partner" id="oculus"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="https://www.hackharassment.com/" target="_blank"><span class="partner" id="hh"></span></a></div>
-            <div class="col-md-4 col-lg-2"><a href="https://www.soylent.com/" target="_blank"><span class="partner" id="soylent"></span></a></div>
-        </div>
-    </div>
+  </div>
 
-<div class="modal fade" id="hackathon" tabindex="-1" role="dialog" aria-labelledby="hackathon" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <div class="video-container">
-                    <div id="player"></div>
-                </div>
-            </div>
-        </div>
+  <div class="container about" id="about">
+    <h2>About Hack K-State</h2>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <p>Hack K-State is an official student run competition team at Kansas State University founded in 2017. Every year the team organizes a hackathon and sponsors official university teams to travel and participate at other hackathons.</p>
+        <p>This year for the Hack K-State hackathon we're expecting 200 high school, undergraduate, and graduate students from around the world! Students show up on Friday night and dream up an awesome website, mobile app, or robot and then get to build it over the weekend. At the end of the hackathon everyone gets to share their creations!</p>
+      </div>
     </div>
-</div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <ul class="list-group">
+          <li class="list-group-item"><a href="https://s3.amazonaws.com/hackkstate/hackkstate.tech/HackKStateInformation.pdf" target="_blank">Hack K-State Flyer</a></li>
+          <li class="list-group-item"><a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a></li>
+          <li class="list-group-item"><a href="https://s3.amazonaws.com/hackkstate/hackkstate.tech/HackK-State2017Prospectus.pdf" target="_blank">Sponsorship Prospectus</a></li>
+          <li class="list-group-item"><a href="https://s3.amazonaws.com/hackkstate/hackkstate.tech/HackK-StateClubBasedTracksandMiniEvents.pdf" target="_blank">Club Based Tracks/Mini Events</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:100" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+  <div class="container faq" id="faq">
+    <h2>FAQ</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">What's a Hackathon?</h3>
+          </div>
+          <div class="panel-body">
+            <a href="https://www.youtube.com/watch?v=qj4DQfYx2Hg" target="_blank">Check out this awesome video from our friends at MLH!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Who can attend Hack K-State?</h3>
+          </div>
+          <div class="panel-body">
+            Hack K-State is open to all high school, undergraduate, and graduate students. We also accept applications if you have graduated within the last 12 months.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">How much does it cost?</h3>
+          </div>
+          <div class="panel-body">
+            It's free! Thanks to our sponsors, we'll be providing food, swag, and sleeping areas all weekend!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Are there travel reimbursements?</h3>
+          </div>
+          <div class="panel-body">
+            We'll be looking at our budget after the hackathon and will potentially do travel reimbursements. If you'd like to be considered, please check the travel reimbursement box in your application.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Are there teams?</h3>
+          </div>
+          <div class="panel-body">
+            Yes! Teams can have up to four people. If you don't have a team but want to be on one, we'll have a team building activity before the hacking begins on Friday.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">I'm not a Computer Science major.</h3>
+          </div>
+          <div class="panel-body">
+            Awesome! Hackathons are for everyone, not just programmers. Whether you have a cool app idea, can create awesome artwork or music, or don't know what you're good at, there's something for you to build at Hack K-State.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">I don't know how to code.</h3>
+          </div>
+          <div class="panel-body">
+            Hackathons are one of the best ways to learn new things! We'll have student and professional mentors available to answer all your questions!
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">What am I going to make?</h3>
+          </div>
+          <div class="panel-body">
+            You can make anything you want! <a href="https://devpost.com/software" target="_blank">Checkout this DevPost page, for some cool projects others have built!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Are you allowing walk-ins?</h3>
+          </div>
+          <div class="panel-body">
+            At this point in time we will not be accepting walk-ins. If you have been accepted please fill out the confirmation so that we know you're coming!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">What should I bring?</h3>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li>School/Government ID</li>
+              <li>Laptop and Charger</li>
+              <li>Water Bottle and Toiletries</li>
+              <li>Clean Clothes</li>
+              <li>Sleeping Bag/Blanket</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">What should I NOT bring?</h3>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li>Weapons</li>
+              <li>Drugs</li>
+              <li>Anyting Illegal</li>
+              <li>Previous Projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">What if I want to shower?</h3>
+          </div>
+          <div class="panel-body">
+            Showers will be available at the <a href="https://goo.gl/maps/jiBC34Lt3bs" target="_blank">K-State Rec</a> for periods of time during the hackathon.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-<script src="js/app.js"></script>
+  <div class="container sponsors" id="sponsors">
+    <h2>Sponsors</h2>
+    <div class="row thirtytwo-bit">
+      <div class="col-md-8 col-md-offset-2"><a href="https://www.bats.com/" target="_blank"><span class="sponsor" id="bats"></span></a></div>
+    </div>
+    <div class="row sixteen-bit">
+      <div class="col-md-6 col-lg-3"><a href="https://www.civicplus.com/" target="_blank"><span class="sponsor" id="civicplus"></span></a></div>
+      <div class="col-md-6 col-lg-3"><a href="https://www.garmin.com/en-US" target="_blank"><span class="sponsor" id="garmin"></span></a></div>
+      <div class="col-md-6 col-lg-3"><a href="https://www.mediware.com/" target="_blank"><span class="sponsor" id="mediware"></span></a></div>
+      <div class="col-md-6 col-lg-3"><a href="http://www.smg.com/" target="_blank"><span class="sponsor" id="smg"></span></a></div>
+    </div>
+    <div class="row lets-talk">
+      <div class="col-md-4 col-lg-2"><a href="http://get.tech/" target="_blank"><span class="sponsor" id="tech"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://betsol.com/" target="_blank"><span class="sponsor" id="betsol"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://codepen.io/" target="_blank"><span class="sponsor" id="codepen"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://www.dunkindonuts.com/en" target="_blank"><span class="sponsor" id="dunkin"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="http://homebase.ai/" target="_blank"><span class="sponsor" id="homebase"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://www.jetbrains.com/" target="_blank"><span class="sponsor" id="jetbrains"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="http://www.thunderheadeng.com/" target="_blank"><span class="sponsor" id="thunderhead"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://www.twilio.com/" target="_blank"><span class="sponsor" id="twilio"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://www.wolfram.com/language/" target="_blank"><span class="sponsor" id="wolfram"></span></a></div>
+    </div>
+    <h2>Partners</h2>
+    <div class="row main-partner">
+      <div class="col-md-4"><a href="https://mlh.io/" target="_blank"><span class="partner" id="mlh"></span></a></div>
+      <div class="col-md-4"><a href="https://www.engg.ksu.edu/" target="_blank"><span class="partner" id="engg"></span></a></div>
+      <div class="col-md-4"><a href="https://www.cs.ksu.edu/" target="_blank"><span class="partner" id="cs"></span></a></div>
+    </div>
+    <div class="row o-partner">
+      <div class="col-md-4 col-lg-2"><a href="https://developer.amazon.com/alexa" target="_blank"><span class="partner" id="alexa"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://aws.amazon.com/" target="_blank"><span class="partner" id="aws"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://www.domain.com/" target="_blank"><span class="partner" id="domain"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://github.com/" target="_blank"><span class="partner" id="github"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank"><span class="partner" id="intel"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://www.oculus.com/" target="_blank"><span class="partner" id="oculus"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://www.hackharassment.com/" target="_blank"><span class="partner" id="hh"></span></a></div>
+      <div class="col-md-4 col-lg-2"><a href="https://www.soylent.com/" target="_blank"><span class="partner" id="soylent"></span></a></div>
+    </div>
+  </div>
+
+  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:51px;width:10%;z-index:100" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
