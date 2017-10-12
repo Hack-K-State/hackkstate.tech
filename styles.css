@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .registration a {
-  width: 150px;
+  width: 200px;
 }
 
 .registration-btn {
@@ -224,11 +224,13 @@ a i:hover {
 #smg {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/SMG.svg');}
 
 #tech {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/TECH.svg');}
-#betsol {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/BETSOL.png');}
 #codepen {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/CodePen.svg');}
+#digitalocean {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/DigitalOcean.svg');}
 #dunkin {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/DunkinDonuts.svg');}
+#google {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Google.svg');}
 #homebase {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Homebase.png');}
 #jetbrains {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/JetBrains.svg');}
+#kind {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/KIND.png');}
 #thunderhead {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Thunderhead.svg');}
 #twilio {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Twillio.svg');}
 #wolfram {background-image: url('https://s3.amazonaws.com/hackkstate/hackkstate.tech/Sponsors/Wolfram.svg');}
