@@ -131,6 +131,14 @@ a i:hover {
   background-color: transparent;
 }
 
+.schedule .list-group-item {
+  min-height: 65px;
+}
+
+.schedule .list-group-item .pull-right {
+  text-align: right;
+}
+
 .panel {
   background-color: transparent;
 }
@@ -203,10 +211,12 @@ a i:hover {
 
 .main {background: url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/overlay.png), url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/3.jpg);}
 .about {background: url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/overlay.png), url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/10.jpg);}
+.schedule {background: url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/overlay.png), url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/5.jpg);}
 .faq {background: url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/overlay.png), url(https://s3.amazonaws.com/hackkstate/hackkstate.tech/1.jpg);}
 
 .main,
 .about,
+.schedule,
 .faq,
 .team {
   background-size: 256px 256px, cover;
