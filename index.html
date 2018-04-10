@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Hack K-State 2018">
+  <title>Hack K-State 2018</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Source+Sans+Pro:300,400" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <ul class="nav flex-column" id="nav">
+    <li class="nav-item"><a class="nav-link active" href="#home"><span>Home</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="#about"><span>About</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="#faq"><span>FAQ</span></a></li>
+    <!--<li class="nav-item"><a class="nav-link" href="#sponsors"><span>Sponsors</span></a></li>-->
+    <li class="nav-item"><a class="nav-link" href="https://adventure.hackkstate.tech" target="_blank"><span>Adventure</span></a></li>
+    <div class="social">
+      <hr />
+      <li class="nav-item"><a href="https://facebook.com/hackkstate" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+      <li class="nav-item"><a href="https://instagram.com/hackkstate" target="_blank"><i class="fab fa-instagram fa-fw"></i></a></li>
+      <li class="nav-item"><a href="https://twitter.com/hackkstate" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
+      <li class="nav-item"><a href="https://www.snapchat.com/add/hackkstate" target="_blank"><i class="fab fa-snapchat-ghost fa-fw"></i></a></li>
+    </div>
+  </ul>
+  <span id="home"></span>
+  <div class="container-fluid">
+    <section class="home">
+      <span class="particles" id="particle-js"></span>
+      <h1>Hack K-State</h1>
+      <p>October 19-21, 2018</p>
+    </section>
+    <section class="about" id="about">
+      <div class="row">
+        <div class="col-12">
+          <span class="title">About Hack K-State</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3>High School & Collegiate Collaboration</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Founded in 2016, Hack K-State is one of the few hackathons in North America that brings high school and college students together for 36 hours of networking, learning, and fun. Hack K-State is an "invention marathon". Anyone who has an interest in technology is encouraged to come and learn something new in a welcoming and relaxed atmosphere. You don't have to be a programmer or be majoring in Computer Science.</p>
+        </div>
+        <div class="col-sm-4 offset-sm-2">
+          <p>"I really love Hack K-State. This is a really cool quote from a really cool person." -Bob Jones</p>
+        </div>
+      </div>
+    </section>
+    <section class="faq" id="faq">
+      <div class="row">
+        <div class="col-12">
+          <span class="title">Frequently Asked Questions</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3>Your questions, answered.</h3>
+        </div>
+      </div>
+    </section>
+    <!--
+    <section class="sponsors" id="sponsors">
+    <div class="row">
+      <div class="col-12">
+        <span class="title">Sponsors and Partners</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h3>The people that make Hack K-State happen.</h3>
+      </div>
+    </div>
+    </section>
+  -->
+    <footer>
+      <p>Hack K-State 2018</p>
+      <ul>
+        <li><a href="https://facebook.com/hackkstate" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+        <li><a href="https://instagram.com/hackkstate" target="_blank"><i class="fab fa-instagram fa-fw"></i></a></li>
+        <li><a href="https://twitter.com/hackkstate" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
+        <li><a href="https://www.snapchat.com/add/hackkstate" target="_blank"><i class="fab fa-snapchat-ghost fa-fw"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <script src="js/particles.min.js"></script>
+  <script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      $('#nav').children().children().removeClass('active');
+      $('a[href^="'+this.getAttribute('href')+'"]').addClass('active');
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  particlesJS.load('particle-js', 'js/particles.json');
+  </script>
+</body>
+</html>
