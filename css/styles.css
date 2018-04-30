@@ -210,7 +210,12 @@ iframe {
   margin-top: 25px;
 }
 
-.partners img {
+.partner-logos div {
+  margin-bottom: 50px;
+}
+
+.partner-logos img {
+  shape-rendering: geometricprecision;
   width: 100%;
 }
 
