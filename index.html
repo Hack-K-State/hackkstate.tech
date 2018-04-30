@@ -164,11 +164,14 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   <script src="js/particles.min.js"></script>
   <script>
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
-    });
+  $('a[href^="#"]').on('click',function(e) {
+    e.preventDefault();
+    var offset = 0;
+    var target = this.hash;
+    if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+    $('html, body').stop().animate({
+      'scrollTop': $(target).offset().top - offset
+    }, 500, 'swing', function() {});
   });
 
   $('body').scrollspy({target: '#nav', offset: 250});
