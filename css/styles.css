@@ -76,6 +76,37 @@ svg {
   opacity: 1;
 }
 
+.social-link {
+  display: block;
+  height: 25px;
+  opacity: 0.4;
+  transition: all .3s;
+  font-size: 14px;
+  line-height: 15px;
+  text-decoration: none !important;
+}
+
+.social-link span {
+  opacity: 0;
+  padding-left: 10px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.social-link:hover {
+  opacity: 1;
+  transition: all .3s;
+}
+
+.social-link.active {
+  opacity: 1;
+}
+
+.social-link:hover > span {
+  color: #fff;
+  opacity: 1;
+}
+
 .social hr {
   border-color: rgba(255,255,255,0.1);
   margin-left: -28px;
@@ -84,13 +115,8 @@ svg {
 }
 
 .social li a svg {
-  opacity: 0.4;
-  transition: all .3s;
   color: #fff;
-}
-
-.social li a svg:hover {
-  opacity: 1;
+  margin-bottom: 0;
 }
 
 #home {

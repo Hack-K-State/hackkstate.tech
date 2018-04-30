@@ -11,17 +11,16 @@
 </head>
 <body>
   <ul class="nav flex-column" id="nav">
-    <li class="nav-item"><a class="nav-link active" href="#home"><span>Home</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="#home"><span>Home</span></a></li>
     <li class="nav-item"><a class="nav-link" href="#about"><span>About</span></a></li>
     <li class="nav-item"><a class="nav-link" href="#faq"><span>FAQ</span></a></li>
     <!--<li class="nav-item"><a class="nav-link" href="#sponsors"><span>Sponsors</span></a></li>-->
-    <li class="nav-item"><a class="nav-link" href="https://adventure.hackkstate.tech" target="_blank"><span>Adventure</span></a></li>
     <div class="social">
       <hr />
-      <li class="nav-item"><a href="https://facebook.com/hackkstate" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-      <li class="nav-item"><a href="https://instagram.com/hackkstate" target="_blank"><i class="fab fa-instagram fa-fw"></i></a></li>
-      <li class="nav-item"><a href="https://twitter.com/hackkstate" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
-      <li class="nav-item"><a href="https://www.snapchat.com/add/hackkstate" target="_blank"><i class="fab fa-snapchat-ghost fa-fw"></i></a></li>
+      <li class="nav-item"><a class="social-link" href="https://facebook.com/hackkstate" target="_blank"><i class="fab fa-facebook-f fa-fw"></i><span>Facebook</span></a></li>
+      <li class="nav-item"><a class="social-link" href="https://instagram.com/hackkstate" target="_blank"><i class="fab fa-instagram fa-fw"></i><span>Instagram</span></a></li>
+      <li class="nav-item"><a class="social-link" href="https://twitter.com/hackkstate" target="_blank"><i class="fab fa-twitter fa-fw"></i><span>Twitter</span></a></li>
+      <li class="nav-item"><a class="social-link" href="https://www.snapchat.com/add/hackkstate" target="_blank"><i class="fab fa-snapchat-ghost fa-fw"></i><span>Snapchat</span></a></li>
     </div>
   </ul>
   <span id="home"></span>
@@ -98,9 +97,20 @@
       e.preventDefault();
       $('#nav').children().children().removeClass('active');
       $('a[href^="'+this.getAttribute('href')+'"]').addClass('active');
+      if (history.pushState) history.pushState(null, null, this.getAttribute('href'));
+      else location.hash = this.getAttribute('href');
       document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: 'smooth'
       });
+    });
+  });
+
+  $(document).ready(function() {
+    var hash = window.location.hash;
+    if(hash == "") hash = "#home";
+    $('a[href^="'+hash+'"]').addClass('active');
+    document.querySelector(hash).scrollIntoView({
+      behavior: 'smooth'
     });
   });
 
