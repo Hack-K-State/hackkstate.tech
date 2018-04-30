@@ -98,12 +98,6 @@
     });
   });
 
-  $(document).ready(function() {
-    var hash = window.location.hash;
-    if(hash == "") hash = "#home";
-    document.querySelector(hash).scrollIntoView({behavior: 'smooth'});
-  });
-
   $('body').scrollspy({target: '#nav'});
 
   particlesJS.load('particle-js', 'js/particles.json');
