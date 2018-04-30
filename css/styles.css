@@ -5,6 +5,7 @@ body {
   height: 100%;
   background-color: #0e141e;
   margin: 0;
+  z-index: 0;
 }
 
 h1,
@@ -140,7 +141,11 @@ svg {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: -1000;
+}
+
+.mobile {
+  display: none;
 }
 
 .container-fluid {
@@ -149,7 +154,6 @@ svg {
   margin: 0 auto;
   height: 100%;
   color: #fff;
-  z-index: 50;
 }
 
 .home {
@@ -160,13 +164,11 @@ svg {
 .home h1 {
   margin-left: 15%;
   font-size: 48px;
-  z-index: 100;
 }
 
 .home p {
   margin-top: 100px;
   margin-left: -300px;
-  z-index: 100;
 }
 
 .title {
@@ -223,6 +225,21 @@ footer {
     display: none;
   }
 
+  .mobile {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .mobile ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .mobile ul li {
+    display: inline-block;
+  }
+
   section {
     padding-left: 0;
   }
@@ -241,23 +258,5 @@ footer {
     margin-top: -10px;
     margin-left: 0;
     text-align: center;
-  }
-
-  footer {
-    display: block;
-    text-align: center;
-  }
-
-  footer ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  footer ul li {
-    display: inline-block;
-  }
-
-  footer ul li a svg {
-    color: #fff;
   }
 }
