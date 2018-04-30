@@ -23,9 +23,8 @@
       <li class="nav-item"><a class="social-link" href="https://www.snapchat.com/add/hackkstate" target="_blank"><i class="fab fa-snapchat-ghost fa-fw"></i><span>Snapchat</span></a></li>
     </div>
   </ul>
-  <span id="home"></span>
   <div class="container-fluid">
-    <section class="home">
+    <section class="home" id="home">
       <span class="particles" id="particle-js"></span>
       <h1>Hack K-State</h1>
       <p>October 19-21, 2018</p>
@@ -95,24 +94,17 @@
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      $('#nav').children().children().removeClass('active');
-      $('a[href^="'+this.getAttribute('href')+'"]').addClass('active');
-      if (history.pushState) history.pushState(null, null, this.getAttribute('href'));
-      else location.hash = this.getAttribute('href');
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
+      document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
     });
   });
 
   $(document).ready(function() {
     var hash = window.location.hash;
     if(hash == "") hash = "#home";
-    $('a[href^="'+hash+'"]').addClass('active');
-    document.querySelector(hash).scrollIntoView({
-      behavior: 'smooth'
-    });
+    document.querySelector(hash).scrollIntoView({behavior: 'smooth'});
   });
+
+  $('body').scrollspy({target: '#nav'});
 
   particlesJS.load('particle-js', 'js/particles.json');
   </script>
