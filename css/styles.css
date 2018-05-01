@@ -202,6 +202,58 @@ iframe {
   width: 100%;
 }
 
+.team {
+  margin-top: 75px;
+  text-align: center;
+}
+
+.member {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+.member * {
+  box-sizing: border-box;
+}
+
+.member img {
+  display: block;
+  width: 150px;
+  border-radius: 150px;
+}
+
+.member-top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px;
+  transition: all 0.3s;
+}
+
+.member:hover .member-top,
+.member:active .member-top {
+  opacity: 1;
+}
+
+.member .member-name {
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  margin-top: 38px;
+}
+
 .faq {
   padding-bottom: 100px;
 }
@@ -215,12 +267,7 @@ iframe {
 }
 
 .partner-logos img {
-  shape-rendering: geometricprecision;
   width: 100%;
-}
-
-footer {
-  display: none;
 }
 
 @media(max-width: 576px) {
