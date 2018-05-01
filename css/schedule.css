@@ -2,8 +2,6 @@ html,
 body {
   font-family: 'Muli', sans-serif;
   color: #181D33;
-  font-size: 1rem;
-  line-height: 1.5;
 }
 
 h1,
@@ -52,7 +50,7 @@ a:hover {
 
 .table-head {
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 2px;
   background-color: #e9ecef;
   color: #181D33;
@@ -71,4 +69,46 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+@media (max-width: 992px) {
+  .table-head div,
+  .table-body div {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: .8em;
+  }
+
+  .table-head {
+    display: none;
+  }
+
+  .table-body {
+    border-bottom: 1px solid #181D33;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .table-head div,
+  .table-body div {
+    padding: 5px 10px;
+  }
+
+  .table-body p {
+    margin-bottom: 0;
+  }
+
+  div[data-title]::before {
+    content: attr(data-title);
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    font-size: small;
+    line-height: 10px;
+    margin-bottom: 3px;
+  }
 }
