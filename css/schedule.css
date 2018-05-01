@@ -24,7 +24,11 @@ h6 {
   border-radius: 2px;
   border: none;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.card-body {
+  padding: 50px;
 }
 
 .nav-link {
@@ -79,6 +83,10 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .card-body {
+    padding: 25px;
+  }
+
   .nav-link {
     font-size: .8em;
   }
@@ -91,6 +99,10 @@ a:hover {
     border-bottom: 1px solid #181D33;
     padding-bottom: 15px;
     margin-bottom: 15px;
+  }
+
+  .table-body:last-child {
+    border-bottom: none;
   }
 
   .table-head div,
