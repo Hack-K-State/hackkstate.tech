@@ -262,12 +262,15 @@ iframe {
   margin-top: 25px;
 }
 
-.partner-logos div {
-  margin-bottom: 50px;
-}
-
-.partner-logos img {
-  width: 100%;
+.sponsor-logos a,
+.partner-logos a {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 125px;
+  margin: 10px auto;
+  max-width: 250px;
 }
 
 @media(max-width: 576px) {
