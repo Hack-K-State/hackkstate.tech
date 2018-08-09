@@ -273,6 +273,11 @@ iframe {
   max-width: 250px;
 }
 
+.register {
+  margin-top: 200px;
+  margin-left: -390px;
+}
+
 @media(max-width: 576px) {
   .container-fluid {
     width: 100%;
@@ -315,5 +320,9 @@ iframe {
 
   .mobile ul li {
     display: inline-block;
+  }
+
+  .register {
+    margin-left: 0;
   }
 }
