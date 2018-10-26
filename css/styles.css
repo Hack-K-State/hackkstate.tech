@@ -45,7 +45,7 @@ section {
   position: fixed;
   width: 112px;
   left: 60px;
-  top: 47%;
+  top: 44%;
   list-style: none;
   z-index: 100;
 }
@@ -159,9 +159,19 @@ section {
   padding-left: 60px;
 }
 
+#home {
+  position: relative;
+}
+
+.home {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .home h1 {
   letter-spacing: -1px;
-  padding-top: 27%;
 }
 
 @media(max-width: 576px) {
@@ -179,8 +189,11 @@ section {
   }
 
   .home {
-    padding-top: 50px;
+    padding-top: 150px;
     text-align: center;
+    position: inherit;
+    top: 0;
+    transform: none;
   }
 
   .mobile {
